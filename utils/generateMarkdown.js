@@ -1,5 +1,10 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
+  const contributions = data.contributions;
+  for (item in contributions) {
+    
+  }
+
   const markdown = /*md*/`
   # ${data.title}
 
