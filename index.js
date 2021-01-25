@@ -43,12 +43,12 @@ const questions = [
         type: 'list',
         message: 'What licensing will apply to this project?',
         name: 'licensing',
-        choice: ['MIT', 'ISC', 'Apache 2.0', 'GNU GPLv3', 'GNU GPLv2', 'Mozilla 2.0', 'Unlicense', 'wtfpl']
+        choices: ['MIT', 'ISC', 'Apache 2.0', 'GNU GPLv3', 'GNU GPLv2', 'Mozilla 2.0', 'Unlicense', 'wtfpl']
     },
     {
         type: 'input',
         message: 'Please provide a Github username',
-        name: 'github-user'
+        name: 'username'
     },
     {
         type: 'input',
