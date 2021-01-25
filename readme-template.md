@@ -41,7 +41,7 @@ ${data.licensing}
 <br>
 
 ## Questions
-Created by: ${username}
-You can ask me any questions at this address: ${email}
+Created by: ${data.username} <br>
+You can ask me any questions at this address: ${data.email}
 
 

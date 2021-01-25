@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const genMD = require('./utils/generateMarkdown.js');
 
 // array of questions for user
 const questions = [
@@ -32,7 +33,7 @@ const questions = [
     {
         type: 'input',
         message: 'What are the contribution guidelines?',
-        name: 'contrib-guide'
+        name: 'contribGuide'
     },
     {
         type: 'input',
@@ -60,16 +61,20 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
     inquirer
-        .prompt(data).then((response) => 
-            fs.writeFile(fileName, JSON.stringify(response), (err) => 
-            err ? console.error(err) : console.log('Success!')
+        .prompt(data).then((response) => {
+            // call on the generateMarkdown function with template literal parsing the response object
+            const markdown = genMD(response);
+            // Write the template literal to the specified markdown file
+            fs.writeFile(fileName, markdown, 'utf8', (err) => 
+            err ? console.error(err) : console.log('Success! README.md is available in root...')
             )
-        );
+        });
 }
 
 // function to initialize program
 function init() {
-    writeToFile('README.md', questions);
+    // Name the file and specify what questions to ask
+    writeToFile('README-test.md', questions);
 }
 
 // function call to initialize program
