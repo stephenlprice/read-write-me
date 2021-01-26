@@ -18,8 +18,7 @@ const findLang = (data) => {
     if (data.lang.indexOf(badges.lang[i].name) > -1) {
       langs += badges.lang[i].badge;
     }
-  } 
-  console.log(langs);
+  }
 };
 
 // Sorts the contributions allow list to display a list in markdown
