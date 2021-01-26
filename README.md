@@ -6,7 +6,7 @@
   ## Overview
   Generates a README file from user prompts
   
-  ### Here is the recording: https://drive.google.com/file/d/1IfBDjO2mfSWAI24oeG-l2P49ehfBkS3W/view?usp=sharing
+  ### [Here is a sample recording of the project](https://drive.google.com/file/d/1IfBDjO2mfSWAI24oeG-l2P49ehfBkS3W/view?usp=sharing)
   <hr>
   <br>
 
