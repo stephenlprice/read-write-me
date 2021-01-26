@@ -1,8 +1,8 @@
 
-  # Test
+  # test project
 
   ## Overview
-  a test
+  it is a test
   <hr>
   <br>
   
@@ -11,37 +11,37 @@
   <br>
   
   ## Installation
-  cloning
+  you clone it from github
   <hr>
   <br>
   
   ## Usage
-  run it
+  you run some commads
   <hr>
   <br>
   
   ## Contributing
   
   ### Accepted Contributions:
-  -creating issues,pull requests,suggesting enhancements,reporting bugs
+  -creating issues,suggesting enhancements,reporting bugs,documentation
   <br>
   
   ### Guidelines
-  whatever
+  be a nice developer
   <hr>
   <br>
   
   ## Testing
-  foo
+  break it if you can
   <hr>
   <br>
   
   ## License
-  ISC
+  MIT
   <hr>
   <br>
   
   ## Questions
-  Created by: stephenlprice<br>
-  You can ask me any questions at this address: stellopricint@gmail.com
+  Created by: user@github<br>
+  You can ask me any questions at this address: stephen@mail
   

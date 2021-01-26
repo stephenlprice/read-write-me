@@ -37,6 +37,11 @@ const questions = [
     },
     {
         type: 'input',
+        message: 'What is the code of conduct for this project?',
+        name: 'codeConduct'
+    },
+    {
+        type: 'input',
         message: 'What test instructions can you provide?',
         name: 'tests'
     },
@@ -44,7 +49,7 @@ const questions = [
         type: 'list',
         message: 'What licensing will apply to this project?',
         name: 'licensing',
-        choices: ['MIT', 'ISC', 'Apache 2.0', 'GNU GPLv3', 'GNU GPLv2', 'Mozilla 2.0', 'Unlicense', 'wtfpl']
+        choices: ['MIT', 'ISC', 'Apache 2.0', 'GNU GPLv3', 'GNU GPLv2', 'Mozilla 2.0', 'Unlicense', 'WTFPL']
     },
     {
         type: 'input',
@@ -63,6 +68,7 @@ function writeToFile(fileName, data) {
     inquirer
         .prompt(data).then((response) => {
             // call on the generateMarkdown function with template literal parsing the response object
+            console.table(response);
             const markdown = genMD(response);
             // Write the template literal to the specified markdown file
             fs.writeFile(fileName, markdown, 'utf8', (err) => 
