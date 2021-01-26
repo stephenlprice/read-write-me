@@ -1,47 +1,69 @@
 # ${data.title}
 
-## Overview
-${data.description}
-<hr>
-<br>
+  ${license} ${langs}
 
-## Table of Contents
-<hr>
-<br>
+  ## Overview
+  ${data.description}
+  <hr>
+  <br>
 
-## Installation
-${data.installation}
-<hr>
-<br>
+  ## Table of Contents
+  1. [Installation](#Installation)
+  2. [Usage](#Usage)
+  3. [Contributing](#Contributing)
+  4. [Code of Conduct](#Code-of-Conduct)
+  4. [Testing](#Testing)
+  5. [License](#License)
+  6. [Questions](#Questions)
+  <hr>
+  <br>
 
-## Usage
-${data.usage}
-<hr>
-<br>
+  ## Installation
+  To install this project, please do the following:<br>
+  ${data.installation}
+  <hr>
+  <br>
 
-## Contributing
+  ## Usage
+  To get started, consider the following:<br>
+  ${data.usage}
+  <hr>
+  <br>
 
-### Accepted Contributions:
--${data.contributions}
-<br>
+  ## Contributing
 
-### Guidelines
-${data.contrib-guide}
-<hr>
-<br>
+  ### Accepted Contributions:
+  The following contributions are allowed for this project:<br>
+  <ul>
+    ${contributions}
+  </ul>
+  <br>
 
-## Testing
-${data.tests}
-<hr>
-<br>
+  ### Guidelines
+  To contribute to this project, please abide by the following:<br>
+  ${data.contribGuide}
+  <hr>
+  <br>
 
-## License
-${data.licensing}
-<hr>
-<br>
+  ## Code of Conduct
+  All contributers must agree and follow the Code of Conduct:<br>
+  ${data.codeConduct}
+  <hr>
+  <br>
 
-## Questions
-Created by: ${data.username} <br>
-You can ask me any questions at this address: ${data.email}
+  ## Testing
+  Testing is more than welcome. Here are a few instructions on how to perform tests:<br>
+  ${data.tests}
+  <hr>
+  <br>
 
+  ## License
+  This project is licensed under the ${data.licensing} license.
+  For more information refer to this link: ${license}
+  <hr>
+  <br>
 
+  ## Questions
+  To communicate with the project owner, use the following contact information:<br>
+  Created by: ${data.username} <br>
+  You can ask me any questions at this address: ${data.email}

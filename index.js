@@ -15,6 +15,12 @@ const questions = [
         name: "description"
     },
     {
+        type: "checkbox",
+        message: "What languages are used in this project?",
+        name: "lang",
+        choices: ['JavaScript', 'Node.js', 'Python', 'R', 'HTML5', 'CSS3', 'Markdown']
+    },
+    {
         type: "input",
         message: "How do you install the project?",
         name: "installation"
@@ -37,6 +43,11 @@ const questions = [
     },
     {
         type: 'input',
+        message: 'What is the code of conduct for this project?',
+        name: 'codeConduct'
+    },
+    {
+        type: 'input',
         message: 'What test instructions can you provide?',
         name: 'tests'
     },
@@ -44,7 +55,7 @@ const questions = [
         type: 'list',
         message: 'What licensing will apply to this project?',
         name: 'licensing',
-        choices: ['MIT', 'ISC', 'Apache 2.0', 'GNU GPLv3', 'GNU GPLv2', 'Mozilla 2.0', 'Unlicense', 'wtfpl']
+        choices: ['MIT', 'ISC', 'Apache 2.0', 'GNU GPLv3', 'GNU GPLv2', 'Mozilla 2.0', 'Unlicense', 'WTFPL']
     },
     {
         type: 'input',
@@ -74,7 +85,7 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     // Name the file and specify what questions to ask
-    writeToFile('README-test.md', questions);
+    writeToFile('README.md', questions);
 }
 
 // function call to initialize program
