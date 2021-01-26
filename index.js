@@ -15,6 +15,12 @@ const questions = [
         name: "description"
     },
     {
+        type: "checkbox",
+        message: "What languages are used in this project?",
+        name: "lang",
+        choices: ['JavaScript', 'Node.js', 'Python', 'R', 'HTML5', 'CSS3', 'Markdown']
+    },
+    {
         type: "input",
         message: "How do you install the project?",
         name: "installation"
@@ -68,7 +74,6 @@ function writeToFile(fileName, data) {
     inquirer
         .prompt(data).then((response) => {
             // call on the generateMarkdown function with template literal parsing the response object
-            console.table(response);
             const markdown = genMD(response);
             // Write the template literal to the specified markdown file
             fs.writeFile(fileName, markdown, 'utf8', (err) => 
@@ -80,7 +85,7 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     // Name the file and specify what questions to ask
-    writeToFile('README-test.md', questions);
+    writeToFile('README.md', questions);
 }
 
 // function call to initialize program
